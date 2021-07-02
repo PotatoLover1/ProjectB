@@ -32,7 +32,7 @@ public class Main {
 		case "go": 
 			
 			command[1] = command[1].substring(0, 1).toUpperCase() + "" + command[1].substring(1).toLowerCase();
-			player.setCurrentRoom(player.getCurrentRoom().getExit(command[1]));
+			player.setCurrentRoom(player.getCurrentRoom().getMove(command[1]));
 			break;
 		case "quit":
 			break;
